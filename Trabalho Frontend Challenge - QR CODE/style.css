@@ -1,0 +1,193 @@
+/* Reset das margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para o cabeçalho */
+  header {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-right: 1rem;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo para o conteúdo principal */
+  main {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+  }
+  
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+    background-image: url('../images/desktop-background.jpg');
+    background-size: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      height: 40vh;
+      background-image: url('../images/mobile-background.jpg');
+    }
+  }
+  
+  .hero h1 {
+    color: #FFFFFF;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .qr-code-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #FFFFFF;
+   border: 2px solid #000000;
+  }
+  
+  .qr-code img {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .content {
+    margin-top: 4rem;
+    text-align: center;
+  }
+  
+  .content h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  
+  /* Estilos para o rodapé */
+  footer {
+    background-color: #F2F2F2;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  /* Estilos para tipografia e cores */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+  }
+  
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #555555;
+  }
+  
+  a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #000000;
+  }
+  
+  a:hover {
+    color: #555555;
+  }
+  
+  body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    color: #555555;
+  }
+  
+  /* Estilos para responsividade */
+  @media (max-width: 1200px) {
+    main {
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    main {
+      max-width: 720px;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      max-width: 480px;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  
+    .content h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    .content p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
